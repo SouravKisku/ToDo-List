@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enhanced Todo List</title>
+    <title>Enhanced To-Do List</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Todo List</h1>
+        <h1>To-Do List</h1>
+        <button id="themeToggle" class="toggle-theme">🌙 Dark Mode</button>
         <div class="input-container">
-            <input type="text" id="taskInput" placeholder="Enter your task...">
-            <input type="text" id="descriptionInput" placeholder="Description...">
+            <input type="text" id="taskInput" placeholder="Task Title">
+            <input type="text" id="descriptionInput" placeholder="Task Description">
             <input type="date" id="dateInput">
             <button onclick="addTask()">Add Task</button>
         </div>
@@ -21,9 +22,8 @@
     <!-- Edit Modal -->
     <div id="editModal" class="modal">
         <div class="modal-content">
-            <h2>Edit Task</h2>
-            <input type="text" id="editTaskInput">
-            <input type="text" id="editDescriptionInput" placeholder="Description...">
+            <input type="text" id="editTaskInput" placeholder="Edit Title">
+            <input type="text" id="editDescriptionInput" placeholder="Edit Description">
             <input type="date" id="editDateInput">
             <div class="modal-buttons">
                 <button onclick="saveEdit()">Save</button>
